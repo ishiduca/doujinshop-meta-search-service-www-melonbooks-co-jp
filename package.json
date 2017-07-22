@@ -1,0 +1,27 @@
+{
+  "name": "doujinshop-meta-search-service-www-melonbooks-co-jp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape t/*.js | tap-spec"
+  },
+  "author": "ishiduca@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "minimist": "^1.2.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.7.0"
+  },
+  "dependencies": {
+    "doujinshop-meta-search-service": "git+https://github.com/ishiduca/doujinshop-meta-search-service.git"
+  },
+  "standard": {
+    "ignore": [
+      "t/"
+    ]
+  },
+  "bin": {
+    "meta-melonbooks": "./bin/metasearch"
+  }
+}
