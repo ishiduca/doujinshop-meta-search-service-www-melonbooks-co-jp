@@ -5,7 +5,7 @@ var argv = require('minimist')(process.argv.slice(2), {
     category: 'mak'
   },
   alias: {
-    c: 'category'
+    c: 'category',
     h: 'help'
   }
 })
@@ -14,7 +14,6 @@ if (argv.help) {
   help()
   process.exit(0)
 }
-
 
 var missi = require('mississippi')
 var melonbooks = require('../index')
@@ -29,7 +28,6 @@ req.end({
   category: argv.category,
   value: argv._.filter(Boolean).join(' ')
 })
-
 
 function help () {
   console.log(`
