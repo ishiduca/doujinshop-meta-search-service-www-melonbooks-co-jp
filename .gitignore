@@ -1,6 +1,6 @@
 *.swp
+*_scraper.js
+data/result.html
 *node_modules
 *npm-debug.log
-*bundle.js
-t/*.html
-package-lock.json
+*package-lock.json
